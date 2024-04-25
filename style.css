@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@keyframes dot {
+	50%{
+		transform: scale(1.5);
+	}
+}
+
+.dots {
+	width: 200px;
+	margin: 100px auto;
+}
+
+.dots > div {
+	background: gray;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	display: inline-block;
+	margin-right: 10px;
+	animation-name: dot;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.dot-2 {
+	animation-delay: 0.2s;
+}
+
+.dot-3 {
+	animation-delay: 0.4s;
+}
+
+#dog-photo {
+	width: 300px;
+	height: 200px;
+	margin-bottom: 50px;
+}
+
+#surati {
+	width: 500px;
+	height: 350px;
+	margin-bottom: 50px;
+	background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
+	background-color: green;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 2s ease-out;
+}
+
+#surati:hover {
+	width: 700px;
+	height: 500px;
+	border-radius: 50px;
+	padding: 30px;
+	transition: 2s ease-in;
+	transform: rotate(180deg);
+}
+
+#surati2 {
+	background: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg") transparent no-repeat bottom center  / cover;
+	width: 300px;
+	height: 200px;
+	margin-bottom: 100px;
+}
+
+@keyframes animacia {
+	from {
+		color: black;
+		letter-spacing: 0px;
+	}
+	to {
+		color: red;
+		letter-spacing: 10px;
+	}
+}
+
+span {
+	animation-name: animacia;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	animation-name: animacia;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+
+@keyframes cake {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(20deg);
+	}
+	50% {
+
+	}
+	75% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+#cake {
+	animation-name: cake;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#loading {
+	width: 200px;
+	height: 200px;
+	animation-name: loading;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#loading-transition {
+	width: 200px;
+	height: 200px;
+}
+
+#loading-transition:hover {
+	transform: rotate(360deg);
+	transition: 2s;
+}
+
+
+
+
+
+
